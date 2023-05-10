@@ -1,0 +1,186 @@
+{
+  "fish": [
+    {
+      "common_name": "Zebra Danio",
+      "scientific_name": "Danio rerio",
+      "average_adult_length": "2 inches",
+      "water_conditions": {
+        "temperature": "65-77°F",
+        "pH": "6.5-7.0",
+        "water_hardness": "5-15 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active schooling fish",
+      "compatibility": "Community tank with other peaceful species"
+    },
+    {
+      "common_name": "Neon Tetra",
+      "scientific_name": "Paracheirodon innesi",
+      "average_adult_length": "1.5 inches",
+      "water_conditions": {
+        "temperature": "68-78°F",
+        "pH": "6.0-7.0",
+        "water_hardness": "1-10 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, schooling fish",
+      "compatibility": "Community tank with other small, peaceful species"
+    },
+    {
+      "common_name": "Cory Catfish",
+      "scientific_name": "Corydoras spp.",
+      "average_adult_length": "1-3 inches",
+      "water_conditions": {
+        "temperature": "72-78°F",
+        "pH": "6.0-7.0",
+        "water_hardness": "3-10 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, bottom-dwelling scavenger",
+      "compatibility": "Community tank with other peaceful species"
+    },
+    {
+      "common_name": "Guppy",
+      "scientific_name": "Poecilia reticulata",
+      "average_adult_length": "0.6-2.4 inches",
+      "water_conditions": {
+        "temperature": "72-82°F",
+        "pH": "6.8-7.8",
+        "water_hardness": "8-12 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active community fish",
+      "compatibility": "Community tank with other peaceful species"
+    },
+    {
+      "common_name": "Betta Fish",
+      "scientific_name": "Betta splendens",
+      "average_adult_length": "2.5-3 inches",
+      "water_conditions": {
+        "temperature": "76-82°F",
+        "pH": "6.0-7.5",
+        "water_hardness": "1-10 dGH"
+      },
+      "diet": "Carnivore",
+      "behavior": "Territorial, aggressive towards other bettas",
+      "compatibility": "Solitary or with peaceful, non-fin-nipping species"
+    },
+    {
+      "common_name": "Molly Fish",
+      "scientific_name": "Poecilia sphenops",
+      "average_adult_length": "3-4 inches",
+      "water_conditions": {
+        "temperature": "72-82°F",
+        "pH": "7.0-8.0",
+        "water_hardness": "15-30 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active community fish",
+      "compatibility": "Community tank with other peaceful species"
+    },
+    {
+      "common_name": "Kuhli Loach",
+      "scientific_name": "Pangio kuhlii",
+      "average_adult_length": "3-5 inches",
+      "water_conditions": {
+        "temperature": "75-86°F",
+        "pH": "5.5-7.0",
+        "water_hardness": "1-10 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, nocturnal, bottom-dwelling scavenger",
+      "compatibility": "Community tank with other peaceful species"
+    },
+    {
+      "common_name": "Platy Fish",
+      "scientific_name": "Xiphophorus maculatus",
+      "average_adult_length": "1.5-2.5 inches",
+      "water_conditions": {
+        "temperature": "70-80°F",
+        "pH": "7.0-8.3",
+        "water_hardness": "10-28 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active community fish",
+      "compatibility": "Community tank with other peaceful species"
+    },
+    {
+      "common_name": "Tiger Barb",
+      "scientific_name": "Puntigrus tetrazona",
+      "average_adult_length": "2-3 inches",
+      "water_conditions": {
+        "temperature": "68-82°F",
+        "pH": "6.0-7.0",
+        "water_hardness": "5-19 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Semi-aggressive, active schooling fish",
+      "compatibility": "Community tank with other similarly sized, non-long-finned species"
+    },
+    {
+      "common_name": "Siamese Fighting Fish",
+      "scientific_name": "Betta splendens",
+      "average_adult_length": "2.5-3 inches",
+      "water_conditions": {
+        "temperature": "76-82°F",
+        "pH": "6.0-7.5",
+        "water_hardness": "1-10 dGH"
+      },
+      "diet": "Carnivore",
+      "behavior": "Territorial, aggressive towards other bettas",
+      "compatibility": "Solitary or with peaceful, non-fin-nipping species"
+    },
+    {
+      "common_name": "Rainbow Fish",
+      "scientific_name": "Melanotaenia spp.",
+      "average_adult_length": "2-6 inches",
+      "water_conditions": {
+        "temperature": "72-79°F",
+        "pH": "6.5-8.0",
+        "water_hardness": "5-25 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active schooling fish",
+      "compatibility": "Community tank with other peaceful, similarly sized species"
+    },
+    {
+      "common_name": "Cherry Barb",
+      "scientific_name": "Puntius titteya",
+      "average_adult_length": "1.5-2 inches",
+      "water_conditions": {
+        "temperature": "73-81°F",
+        "pH": "6.0-7.0",
+        "water_hardness": "4-15 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, schooling fish",
+      "compatibility": "Community tank with other peaceful species"
+    },
+    {
+      "common_name": "Swordtail",
+      "scientific_name": "Xiphophorus hellerii",
+      "average_adult_length": "3-4 inches",
+      "water_conditions": {
+        "temperature": "72-82°F",
+        "pH": "7.0-8.3",
+        "water_hardness": "10-28 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active community fish",
+      "compatibility": "Community tank with other peaceful species"
+    },
+    {
+      "common_name": "Angelfish",
+      "scientific_name": "Pterophyllum scalare",
+      "average_adult_length": "4-6 inches",
+      "water_conditions": {
+        "temperature": "75-82°F",
+        "pH": "6.8-7.8",
+        "water_hardness": "3-8 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, semi-aggressive during breeding",
+      "compatibility": "Community tank with other peaceful, non-fin-nipping species"
+    }
+  ]
+}

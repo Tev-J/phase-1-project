@@ -10,8 +10,8 @@ html {
 }
 
 #Aquarium_Builder {
-  width: 80vw;
-  height: 70vh;
+  width: 85vw;
+  height: 75vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,6 @@ html {
 }
 
 #middle {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -41,6 +40,16 @@ html {
   height: 50vh;
   border: 1px solid green;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4vmin;
+  overflow: auto;
+}
+
+#fishPool .image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 #compatibilityGuide {

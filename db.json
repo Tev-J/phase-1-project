@@ -1,6 +1,7 @@
 {
   "fish": [
     {
+      "id": 1,
       "common_name": "Zebra Danio",
       "scientific_name": "Danio rerio",
       "img": "https://www.fishkeepingworld.com/wp-content/uploads/2019/06/Zebra-Danio-Complete-Care-Guide-Is-This-Fish-Right-For-Your-Tank-Cover-678x381.jpg",
@@ -19,6 +20,7 @@
       }
     },
     {
+      "id": 2,
       "common_name": "Neon Tetra",
       "scientific_name": "Paracheirodon innesi",
       "img": "http://www.discoveranimals.org/uploads/pets/NeonTetra.jpg",
@@ -37,6 +39,7 @@
       }
     },
     {
+      "id": 3,
       "common_name": "Cory Catfish",
       "scientific_name": "Corydoras spp.",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2019/09/cory-catfish-1024x683.jpg",
@@ -55,6 +58,7 @@
       }
     },
     {
+      "id": 4,
       "common_name": "Guppy",
       "scientific_name": "Poecilia reticulata",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2021/04/guppy-group.jpg",
@@ -73,6 +77,7 @@
       }
     },
     {
+      "id": 5,
       "common_name": "Dwarf Gourami",
       "scientific_name": "Trichogaster lalius",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2020/12/dwarf-gourami-swimming-tank.jpg",
@@ -91,6 +96,7 @@
       }
     },
     {
+      "id": 6,
       "common_name": "Molly Fish",
       "scientific_name": "Poecilia sphenops",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2022/11/balloon-molly-fish.jpg",
@@ -109,6 +115,7 @@
       }
     },
     {
+      "id": 7,
       "common_name": "Kuhli Loach",
       "scientific_name": "Pangio kuhlii",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2019/08/kuhli-loach-768x527.jpg",
@@ -127,6 +134,7 @@
       }
     },
     {
+      "id": 8,
       "common_name": "Platy Fish",
       "scientific_name": "Xiphophorus maculatus",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2021/03/platy-fish.jpg",
@@ -145,6 +153,7 @@
       }
     },
     {
+      "id": 9,
       "common_name": "Tiger Barb",
       "scientific_name": "Puntigrus tetrazona",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2020/07/tiger-barb.jpg",
@@ -163,6 +172,7 @@
       }
     },
     {
+      "id": 10,
       "common_name": "Siamese Fighting Fish",
       "scientific_name": "Betta splendens",
       "img": "https://a-z-animals.com/media/siamese-fighting-fish-9.jpg",
@@ -181,6 +191,7 @@
       }
     },
     {
+      "id": 11,
       "common_name": "Rainbow Fish",
       "scientific_name": "Melanotaenia spp.",
       "img": "https://rainbowfish.angfaqld.org.au/Kambolgie%20Creek%20GES3.jpg",
@@ -199,6 +210,7 @@
       }
     },
     {
+      "id": 12,
       "common_name": "Cherry Barb",
       "scientific_name": "Puntius titteya",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2020/03/cherry-barb.jpg",
@@ -217,6 +229,7 @@
       }
     },
     {
+      "id": 13,
       "common_name": "Swordtail",
       "scientific_name": "Xiphophorus hellerii",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2020/03/cherry-barb.jpg",
@@ -235,6 +248,7 @@
       }
     },
     {
+      "id": 14,
       "common_name": "Angelfish",
       "scientific_name": "Pterophyllum scalare",
       "img": "https://blog.tetra.net/en-en/wp-content/uploads/2019/08/angel_fish_72.jpg",
@@ -253,6 +267,7 @@
       }
     },
     {
+      "id": 15,
       "common_name": "Harlequin Rasbora",
       "scientific_name": "Trigonostigma heteromorpha",
       "img": "https://cdn.shopify.com/s/files/1/2997/2036/products/DSC_0182_1500x1500.jpg?v=1655493381",
@@ -271,6 +286,7 @@
       }
     },
     {
+      "id": 16,
       "common_name": "Cardinal Tetra",
       "scientific_name": "Paracheirodon axelrodi",
       "img": "https://www.fishkeepingworld.com/wp-content/uploads/2019/11/Cardinal-Tetra-Complete-Care-Guide-Banner-678x381.jpg?ezimgfmt=ng%3Awebp%2Fngcb10%2Frs%3Adevice%2Frscb10-1",
@@ -289,6 +305,7 @@
       }
     },
     {
+      "id": 17,
       "common_name": "Pearl Gourami",
       "scientific_name": "Trichopodus leerii",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2019/10/pearl-gourami.jpg",
@@ -307,6 +324,7 @@
       }
     },
     {
+      "id": 18,
       "common_name": "Black Skirt Tetra",
       "scientific_name": "Gymnocorymbus ternetzi",
       "img": "https://www.aquariumsource.com/wp-content/uploads/2020/03/gymnocorymbus-ternetzi-tank.jpg",
@@ -325,6 +343,7 @@
       }
     },
     {
+      "id": 19,
       "common_name": "Bronze Corydoras",
       "scientific_name": "Corydoras aeneus",
       "img": "https://i0.wp.com/aquariumtidings.com/wp-content/uploads/2017/12/Depositphotos_55457023_original.jpg",
@@ -339,6 +358,7 @@
       "compatibility": "Community tank with other peaceful species"
     },
     {
+      "id": 20,
       "common_name": "Honey Gourami",
       "scientific_name": "Trichogaster chuna",
       "img": "https://www.fishkeepingworld.com/wp-content/uploads/2019/01/Honey-Gourami.jpg",

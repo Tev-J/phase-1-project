@@ -3,7 +3,8 @@
     {
       "common_name": "Zebra Danio",
       "scientific_name": "Danio rerio",
-      "average_adult_length": "2 inches",
+      "img": "https://www.fishkeepingworld.com/wp-content/uploads/2019/06/Zebra-Danio-Complete-Care-Guide-Is-This-Fish-Right-For-Your-Tank-Cover-678x381.jpg",
+      "longest_average_length_inches": 2,
       "water_conditions": {
         "temperature": "65-77°F",
         "pH": "6.5-7.0",
@@ -11,12 +12,17 @@
       },
       "diet": "Omnivore",
       "behavior": "Peaceful, active schooling fish",
-      "compatibility": "Community tank with other peaceful species"
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "short",
+        "pace": "fast"
+      }
     },
     {
       "common_name": "Neon Tetra",
       "scientific_name": "Paracheirodon innesi",
-      "average_adult_length": "1.5 inches",
+      "img": "http://www.discoveranimals.org/uploads/pets/NeonTetra.jpg",
+      "longest_average_length_inches": 1.5,
       "water_conditions": {
         "temperature": "68-78°F",
         "pH": "6.0-7.0",
@@ -24,12 +30,305 @@
       },
       "diet": "Omnivore",
       "behavior": "Peaceful, schooling fish",
-      "compatibility": "Community tank with other small, peaceful species"
+      "compatibility": {
+        "comment": "Community tank with other small, peaceful species",
+        "finLength": "short",
+        "pace": "slow"
+      }
     },
     {
       "common_name": "Cory Catfish",
       "scientific_name": "Corydoras spp.",
-      "average_adult_length": "1-3 inches",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2019/09/cory-catfish-1024x683.jpg",
+      "longest_average_length_inches": 3,
+      "water_conditions": {
+        "temperature": "72-78°F",
+        "pH": "6.0-7.0",
+        "water_hardness": "3-10 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, bottom-dwelling scavenger",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "short",
+        "pace": "slow"
+      }
+    },
+    {
+      "common_name": "Guppy",
+      "scientific_name": "Poecilia reticulata",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2021/04/guppy-group.jpg",
+      "longest_average_length_inches": 4,
+      "water_conditions": {
+        "temperature": "72-82°F",
+        "pH": "6.8-7.8",
+        "water_hardness": "8-12 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active community fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "long",
+        "pace": "fast"
+      }
+    },
+    {
+      "common_name": "Dwarf Gourami",
+      "scientific_name": "Trichogaster lalius",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2020/12/dwarf-gourami-swimming-tank.jpg",
+      "longest_average_length_inches": 4,
+      "water_conditions": {
+        "temperature": "72-82°F",
+        "pH": "6.0-7.5",
+        "water_hardness": "5-15 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, labyrinth fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "long",
+        "pace": "slow"
+      }
+    },
+    {
+      "common_name": "Molly Fish",
+      "scientific_name": "Poecilia sphenops",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2022/11/balloon-molly-fish.jpg",
+      "longest_average_length_inches": 4,
+      "water_conditions": {
+        "temperature": "72-82°F",
+        "pH": "7.0-8.0",
+        "water_hardness": "15-30 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active community fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "short",
+        "pace": "slow"
+      }
+    },
+    {
+      "common_name": "Kuhli Loach",
+      "scientific_name": "Pangio kuhlii",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2019/08/kuhli-loach-768x527.jpg",
+      "longest_average_length_inches": 5,
+      "water_conditions": {
+        "temperature": "75-86°F",
+        "pH": "5.5-7.0",
+        "water_hardness": "1-10 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, nocturnal, bottom-dwelling scavenger",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "short",
+        "pace": "slow"
+      }
+    },
+    {
+      "common_name": "Platy Fish",
+      "scientific_name": "Xiphophorus maculatus",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2021/03/platy-fish.jpg",
+      "longest_average_length_inches": 2.5,
+      "water_conditions": {
+        "temperature": "70-80°F",
+        "pH": "7.0-8.3",
+        "water_hardness": "10-28 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active community fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "short",
+        "pace": "fast"
+      }
+    },
+    {
+      "common_name": "Tiger Barb",
+      "scientific_name": "Puntigrus tetrazona",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2020/07/tiger-barb.jpg",
+      "longest_average_length_inches": 3,
+      "water_conditions": {
+        "temperature": "68-82°F",
+        "pH": "6.0-7.0",
+        "water_hardness": "5-19 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Semi-aggressive, active schooling fish",
+      "compatibility": {
+        "comment": "Community tank with other similarly sized, non-long-finned species",
+        "finLength": "short",
+        "pace": "fast"
+      }
+    },
+    {
+      "common_name": "Siamese Fighting Fish",
+      "scientific_name": "Betta splendens",
+      "img": "https://a-z-animals.com/media/siamese-fighting-fish-9.jpg",
+      "longest_average_length_inches": 3,
+      "water_conditions": {
+        "temperature": "76-82°F",
+        "pH": "6.0-7.5",
+        "water_hardness": "1-10 dGH"
+      },
+      "diet": "Carnivore",
+      "behavior": "Territorial, aggressive towards other bettas",
+      "compatibility": {
+        "comment": "Solitary or with peaceful, non-fin-nipping species",
+        "finLength": "long",
+        "pace": "slow"
+      }
+    },
+    {
+      "common_name": "Rainbow Fish",
+      "scientific_name": "Melanotaenia spp.",
+      "img": "https://rainbowfish.angfaqld.org.au/Kambolgie%20Creek%20GES3.jpg",
+      "longest_average_length_inches": 6,
+      "water_conditions": {
+        "temperature": "72-79°F",
+        "pH": "6.5-8.0",
+        "water_hardness": "5-25 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active schooling fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful, similarly sized species",
+        "finLength": "long",
+        "pace": "fast"
+      }
+    },
+    {
+      "common_name": "Cherry Barb",
+      "scientific_name": "Puntius titteya",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2020/03/cherry-barb.jpg",
+      "longest_average_length_inches": 2,
+      "water_conditions": {
+        "temperature": "73-81°F",
+        "pH": "6.0-7.0",
+        "water_hardness": "4-15 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, schooling fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "short",
+        "pace": "fast"
+      }
+    },
+    {
+      "common_name": "Swordtail",
+      "scientific_name": "Xiphophorus hellerii",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2020/03/cherry-barb.jpg",
+      "longest_average_length_inches": 4,
+      "water_conditions": {
+        "temperature": "72-82°F",
+        "pH": "7.0-8.3",
+        "water_hardness": "10-28 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active community fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "long",
+        "pace": "fast"
+      }
+    },
+    {
+      "common_name": "Angelfish",
+      "scientific_name": "Pterophyllum scalare",
+      "img": "https://blog.tetra.net/en-en/wp-content/uploads/2019/08/angel_fish_72.jpg",
+      "longest_average_length_inches": 6,
+      "water_conditions": {
+        "temperature": "75-82°F",
+        "pH": "6.8-7.8",
+        "water_hardness": "3-8 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, semi-aggressive during breeding",
+      "compatibility": {
+        "comment": "Community tank with other peaceful, non-fin-nipping species",
+        "finLength": "long",
+        "pace": "slow"
+      }
+    },
+    {
+      "common_name": "Harlequin Rasbora",
+      "scientific_name": "Trigonostigma heteromorpha",
+      "img": "https://cdn.shopify.com/s/files/1/2997/2036/products/DSC_0182_1500x1500.jpg?v=1655493381",
+      "longest_average_length_inches": 1.5,
+      "water_conditions": {
+        "temperature": "72-79°F",
+        "pH": "6.0-7.0",
+        "water_hardness": "5-12 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active schooling fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "short",
+        "pace": "fast"
+      }
+    },
+    {
+      "common_name": "Cardinal Tetra",
+      "scientific_name": "Paracheirodon axelrodi",
+      "img": "https://www.fishkeepingworld.com/wp-content/uploads/2019/11/Cardinal-Tetra-Complete-Care-Guide-Banner-678x381.jpg?ezimgfmt=ng%3Awebp%2Fngcb10%2Frs%3Adevice%2Frscb10-1",
+      "longest_average_length_inches": 1.5,
+      "water_conditions": {
+        "temperature": "73-81°F",
+        "pH": "5.0-7.0",
+        "water_hardness": "1-8 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, schooling fish",
+      "compatibility": {
+        "comment": "Community tank with other small, peaceful species",
+        "finLength": "short",
+        "pace": "slow"
+      }
+    },
+    {
+      "common_name": "Pearl Gourami",
+      "scientific_name": "Trichopodus leerii",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2019/10/pearl-gourami.jpg",
+      "longest_average_length_inches": 4,
+      "water_conditions": {
+        "temperature": "77-82°F",
+        "pH": "6.0-7.5",
+        "water_hardness": "4-18 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, labyrinth fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "long",
+        "pace": "slow"
+      }
+    },
+    {
+      "common_name": "Black Skirt Tetra",
+      "scientific_name": "Gymnocorymbus ternetzi",
+      "img": "https://www.aquariumsource.com/wp-content/uploads/2020/03/gymnocorymbus-ternetzi-tank.jpg",
+      "longest_average_length_inches": 3,
+      "water_conditions": {
+        "temperature": "72-79°F",
+        "pH": "6.0-7.5",
+        "water_hardness": "5-20 dGH"
+      },
+      "diet": "Omnivore",
+      "behavior": "Peaceful, active schooling fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "short",
+        "pace": "fast"
+      }
+    },
+    {
+      "common_name": "Bronze Corydoras",
+      "scientific_name": "Corydoras aeneus",
+      "img": "https://i0.wp.com/aquariumtidings.com/wp-content/uploads/2017/12/Depositphotos_55457023_original.jpg",
+      "longest_average_length_inches": 3,
       "water_conditions": {
         "temperature": "72-78°F",
         "pH": "6.0-7.0",
@@ -40,147 +339,22 @@
       "compatibility": "Community tank with other peaceful species"
     },
     {
-      "common_name": "Guppy",
-      "scientific_name": "Poecilia reticulata",
-      "average_adult_length": "0.6-2.4 inches",
+      "common_name": "Honey Gourami",
+      "scientific_name": "Trichogaster chuna",
+      "img": "https://www.fishkeepingworld.com/wp-content/uploads/2019/01/Honey-Gourami.jpg",
+      "longest_average_length_inches": 2.4,
       "water_conditions": {
         "temperature": "72-82°F",
-        "pH": "6.8-7.8",
-        "water_hardness": "8-12 dGH"
-      },
-      "diet": "Omnivore",
-      "behavior": "Peaceful, active community fish",
-      "compatibility": "Community tank with other peaceful species"
-    },
-    {
-      "common_name": "Betta Fish",
-      "scientific_name": "Betta splendens",
-      "average_adult_length": "2.5-3 inches",
-      "water_conditions": {
-        "temperature": "76-82°F",
         "pH": "6.0-7.5",
-        "water_hardness": "1-10 dGH"
-      },
-      "diet": "Carnivore",
-      "behavior": "Territorial, aggressive towards other bettas",
-      "compatibility": "Solitary or with peaceful, non-fin-nipping species"
-    },
-    {
-      "common_name": "Molly Fish",
-      "scientific_name": "Poecilia sphenops",
-      "average_adult_length": "3-4 inches",
-      "water_conditions": {
-        "temperature": "72-82°F",
-        "pH": "7.0-8.0",
-        "water_hardness": "15-30 dGH"
+        "water_hardness": "4-18 dGH"
       },
       "diet": "Omnivore",
-      "behavior": "Peaceful, active community fish",
-      "compatibility": "Community tank with other peaceful species"
-    },
-    {
-      "common_name": "Kuhli Loach",
-      "scientific_name": "Pangio kuhlii",
-      "average_adult_length": "3-5 inches",
-      "water_conditions": {
-        "temperature": "75-86°F",
-        "pH": "5.5-7.0",
-        "water_hardness": "1-10 dGH"
-      },
-      "diet": "Omnivore",
-      "behavior": "Peaceful, nocturnal, bottom-dwelling scavenger",
-      "compatibility": "Community tank with other peaceful species"
-    },
-    {
-      "common_name": "Platy Fish",
-      "scientific_name": "Xiphophorus maculatus",
-      "average_adult_length": "1.5-2.5 inches",
-      "water_conditions": {
-        "temperature": "70-80°F",
-        "pH": "7.0-8.3",
-        "water_hardness": "10-28 dGH"
-      },
-      "diet": "Omnivore",
-      "behavior": "Peaceful, active community fish",
-      "compatibility": "Community tank with other peaceful species"
-    },
-    {
-      "common_name": "Tiger Barb",
-      "scientific_name": "Puntigrus tetrazona",
-      "average_adult_length": "2-3 inches",
-      "water_conditions": {
-        "temperature": "68-82°F",
-        "pH": "6.0-7.0",
-        "water_hardness": "5-19 dGH"
-      },
-      "diet": "Omnivore",
-      "behavior": "Semi-aggressive, active schooling fish",
-      "compatibility": "Community tank with other similarly sized, non-long-finned species"
-    },
-    {
-      "common_name": "Siamese Fighting Fish",
-      "scientific_name": "Betta splendens",
-      "average_adult_length": "2.5-3 inches",
-      "water_conditions": {
-        "temperature": "76-82°F",
-        "pH": "6.0-7.5",
-        "water_hardness": "1-10 dGH"
-      },
-      "diet": "Carnivore",
-      "behavior": "Territorial, aggressive towards other bettas",
-      "compatibility": "Solitary or with peaceful, non-fin-nipping species"
-    },
-    {
-      "common_name": "Rainbow Fish",
-      "scientific_name": "Melanotaenia spp.",
-      "average_adult_length": "2-6 inches",
-      "water_conditions": {
-        "temperature": "72-79°F",
-        "pH": "6.5-8.0",
-        "water_hardness": "5-25 dGH"
-      },
-      "diet": "Omnivore",
-      "behavior": "Peaceful, active schooling fish",
-      "compatibility": "Community tank with other peaceful, similarly sized species"
-    },
-    {
-      "common_name": "Cherry Barb",
-      "scientific_name": "Puntius titteya",
-      "average_adult_length": "1.5-2 inches",
-      "water_conditions": {
-        "temperature": "73-81°F",
-        "pH": "6.0-7.0",
-        "water_hardness": "4-15 dGH"
-      },
-      "diet": "Omnivore",
-      "behavior": "Peaceful, schooling fish",
-      "compatibility": "Community tank with other peaceful species"
-    },
-    {
-      "common_name": "Swordtail",
-      "scientific_name": "Xiphophorus hellerii",
-      "average_adult_length": "3-4 inches",
-      "water_conditions": {
-        "temperature": "72-82°F",
-        "pH": "7.0-8.3",
-        "water_hardness": "10-28 dGH"
-      },
-      "diet": "Omnivore",
-      "behavior": "Peaceful, active community fish",
-      "compatibility": "Community tank with other peaceful species"
-    },
-    {
-      "common_name": "Angelfish",
-      "scientific_name": "Pterophyllum scalare",
-      "average_adult_length": "4-6 inches",
-      "water_conditions": {
-        "temperature": "75-82°F",
-        "pH": "6.8-7.8",
-        "water_hardness": "3-8 dGH"
-      },
-      "diet": "Omnivore",
-      "behavior": "Peaceful, semi-aggressive during breeding",
-      "compatibility": "Community tank with other peaceful, non-fin-nipping species"
+      "behavior": "Peaceful, labyrinth fish",
+      "compatibility": {
+        "comment": "Community tank with other peaceful species",
+        "finLength": "long",
+        "pace": "slow"
+      }
     }
   ]
 }

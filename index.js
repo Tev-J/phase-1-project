@@ -1,13 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //   Stuff
   //
   //
   //
-
   //API Endpoint
   const fetchFishes = fetch("http://localhost:3000/fish")
     .then((res) => res.json())
     .then((data) => parseFishData(data));
+
+  //Event listener for images
+  const fishImages = document.querySelectorAll(".image");
+  console.log(fishImages);
+  fishImages.forEach((image) => {
+    image.addEventListener("click", handleImageClicks());
+  });
 });
 
 function parseFishData(data) {
@@ -30,8 +35,6 @@ function buildFishProfile(fish) {
 
 //creates selectButton for fish
 function buildSelectList(fish) {
-  //const name = fish.common_name;
-
   const footer = document.getElementById("footer");
 
   const btn = document.createElement("button");
@@ -40,4 +43,10 @@ function buildSelectList(fish) {
   footer.appendChild(btn);
 
   footer.appendChild;
+}
+
+//handlesClickEvent -- populates side tab and header bar
+function handleImageClicks(e) {
+  console.log(e.target);
+  return e;
 }

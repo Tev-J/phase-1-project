@@ -11,26 +11,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function parseFishData(data) {
-  for (fish in data) {
-    buildSelectList(fish);
+  for (const item of data) {
+    buildSelectList(item);
+    buildFishProfile(item);
   }
 }
 
 //adds image of fish to fishPool
-function buildFishProfile() {
-  const fishPool = document.querySelector("fishPool.content");
+function buildFishProfile(fish) {
+  const fishPoolContent = document.querySelector("#fishPool .content");
+
+  const image = document.createElement("img");
+  image.src = fish.img;
+  image.setAttribute("class", "image");
+
+  fishPoolContent.appendChild(image);
 }
 
 //creates selectButton for fish
-function buildSelectList(data) {
-  const name = data.common_name;
-  console.log(data);
+function buildSelectList(fish) {
+  //const name = fish.common_name;
 
   const footer = document.getElementById("footer");
 
   const btn = document.createElement("button");
-  btn.setAttribute("id", "fish-button");
-  btn.textContent = `${name}`;
+  btn.setAttribute("class", "fish-button");
+  btn.textContent = `${fish.common_name}`;
   footer.appendChild(btn);
 
   footer.appendChild;

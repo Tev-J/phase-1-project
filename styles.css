@@ -89,3 +89,23 @@ h1 {
 h2 {
   text-align: center;
 }
+
+button {
+  /* Background and border */
+  background-color: black;
+  border: white;
+  color: white;
+  /* Padding and margin */
+  padding: 15px
+  margin: 5px;
+  /* Text styling */
+  font-size: 16px;
+  text-align: center;
+  /* Hover effect */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: grey;
+}

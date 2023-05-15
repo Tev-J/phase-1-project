@@ -92,9 +92,6 @@ h2 {
   text-align: center;
 }
 
-#header button {
-  
-}
 
 #header button {
   /* Background and border */
@@ -129,4 +126,8 @@ h2 {
   font-size: 12px;
   
   
+}
+
+#submit-button{
+  float:right;
 }

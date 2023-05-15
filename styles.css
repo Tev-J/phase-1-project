@@ -92,18 +92,21 @@ h2 {
   text-align: center;
 }
 
+#header button.selected {
+  background-color: #08867d;
+}
 
 #header button {
   /* Background and border */
   background-color: black;
-  
+
   border: white;
   color: white;
   /* Padding and margin */
-  padding: 2px
+  padding: 2px;
   margin: 4px;
   /* Text styling */
-  
+
   text-align: center;
   /* Hover effect */
   cursor: pointer;
@@ -124,10 +127,8 @@ h2 {
   padding: 5px;
   margin: 4px;
   font-size: 12px;
-  
-  
 }
 
-#submit-button{
-  float:right;
+#submit-button {
+  float: right;
 }

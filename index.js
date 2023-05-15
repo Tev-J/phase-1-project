@@ -3,6 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const fetchFishes = fetch("http://localhost:3000/fish")
     .then((res) => res.json())
     .then((data) => parseFishData(data));
+
+  const addToMyAquariumButton = document.getElementById("bigButtonOnHeader2");
+  addToMyAquariumButton.addEventListener("click", handlesClickForAddButton);
+
+  const resetButton = document.getElementById("bigButtonOnHeader1");
+  resetButton.addEventListener("click", handlesClickForResetButton);
+
+  // const xbuttons = document.querySelectorAll("X");
+  // for (btn of xbuttons) {
+  //   btn.addEventListener("click", handleClickForXButtons);
+  // }
 });
 
 function parseFishData(data) {
@@ -20,8 +31,8 @@ function renderFishButtons(fish) {
   btn.setAttribute("class", "fish-button");
   btn.textContent = `${fish.common_name}`;
   btn.addEventListener("click", handlesClickForFishButtons);
+  btn.addEventListener("dblclick", handlesDoubleClickForFishButtons);
   header.appendChild(btn);
-  header.appendChild;
 }
 
 //renders image for every fish inside of a scroller
@@ -41,6 +52,43 @@ function handlesClickForFishButtons(e) {
   selectImage(name);
 }
 
+function handlesDoubleClickForFishButtons(e) {
+  // adds .selected class
+  const btn = e.target;
+
+  if (btn.classList.contains("selected")) {
+    console.log("should be removing");
+    btn.classList.remove("selected");
+  } else {
+    btn.classList.add("selected");
+  }
+}
+
+function handlesClickForAddButton(e) {
+  //sends list of selected elements to footer
+  const targets = document.querySelectorAll(".selected");
+
+  for (const target of targets) {
+    //console.log(target);
+    buildAquarium(target.textContent);
+  }
+}
+
+function handlesClickForResetButton() {
+  //removes .selected class from all selected buttons
+  const targets = document.querySelectorAll(".selected");
+
+  for (const target of targets) {
+    target.classList.remove("selected");
+  }
+}
+
+function handleClickForXButtons(e) {
+  //deletes p element // parent node
+  const target = e.target;
+  const p = target.parentNode;
+  p.remove();
+}
 //fetches object with matching common_name
 function fetchFish(name) {
   return fetch("http://localhost:3000/fish")
@@ -80,4 +128,21 @@ function selectImage(fishName) {
     img.src = fish.img;
     scroller.appendChild(img);
   });
+}
+
+function buildAquarium(fishName) {
+  const footer = document.getElementById("footer");
+
+  const p = document.createElement("p");
+  p.setAttribute("class", "addedFish");
+
+  const btn = document.createElement("button");
+  btn.setAttribute("class", "X");
+  btn.addEventListener("click", handleClickForXButtons);
+
+  p.textContent = `${fishName}   `;
+  btn.textContent = "x";
+
+  p.appendChild(btn);
+  footer.appendChild(p);
 }

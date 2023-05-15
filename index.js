@@ -146,3 +146,7 @@ function buildAquarium(fishName) {
   p.appendChild(btn);
   footer.appendChild(p);
 }
+
+function generateReport(fishes) {
+  //;
+}

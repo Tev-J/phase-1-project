@@ -16,7 +16,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-between; /* This creates space between divisions */
-  background-color: white;
+  background-color: black;
   /*border: 5px solid green; */
   padding: 20px;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ html {
   justify-content: space-between;
   width: 100%;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid rgb(63, 146, 172);
   margin-bottom: 20px;
   border-radius: 15px;
 }
@@ -39,9 +39,9 @@ html {
 }
 
 #fishPool {
-  width: 68%;
+  width: auto;
   height: 50vh;
-  border: 1px solid black;
+  border: 1px solid rgb(63, 146, 172);
   margin-bottom: 20px;
   overflow: hidden;
   /*background-color: black; */
@@ -68,7 +68,7 @@ html {
 #compatibilityGuide {
   width: 30%;
   height: 50vh;
-  border: 1px solid black;
+  border: 1px solid rgb(63, 146, 172);
   margin-bottom: 20px;
   border-radius: 15px;
 }
@@ -76,8 +76,13 @@ html {
 #footer {
   width: 100%;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid rgb(63, 146, 172);
   border-radius: 15px;
+  float: right;
+}
+.addedFish {
+  float: left;
+  padding: 8px;
 }
 
 h1 {
@@ -85,11 +90,20 @@ h1 {
   color: white;
   text-shadow: 4px 4px darkblue;
   font-family: "Marker Felt", fantasy;
-  font-size: 60px;
+  font-size: 64px;
+  margin-bottom: -12px;
 }
 
 h2 {
   text-align: center;
+  /*word-spacing: 4px;
+  letter-spacing: 10px;*/
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+header h2 {
+  text-align: center;
+  margin-top: 10px;
 }
 
 #header button.selected {
@@ -130,5 +144,10 @@ h2 {
 }
 
 #submit-button {
-  float: right;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  width: 80%;
 }

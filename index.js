@@ -114,7 +114,11 @@ function handleClickForReportButton(e) {
   //console.log(fishNames);
 
   if (document.querySelector(".report") === null) {
-    generateReport(fishNames);
+    if (fishNames.length === 0) {
+      noReport();
+    } else {
+      generateReport(fishNames);
+    }
   }
 }
 

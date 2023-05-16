@@ -111,6 +111,8 @@ function handleClickForReportButton(e) {
     return p.textContent.split("   ")[0];
   });
 
+  //console.log(fishNames);
+
   if (document.querySelector(".report") === null) {
     generateReport(fishNames);
   }
@@ -206,4 +208,23 @@ function generateReport(fishes) {
   p1.textContent =
     "It's important to consider ongoing costs for regular maintenance, such as water testing kits, replacement filter media, and potential veterinary care for the fish. Researching specific requirements for the type of fish you plan to keep and consulting with experienced aquarists can help you determine the necessary supplies and costs for your aquarium setup.";
   reportSection.appendChild(p1);
+}
+
+//writes to screen when a user selects Generate Report without selecting any fish
+function noReport() {
+  const main = document.querySelector("main");
+  const reportSection = document.createElement("section");
+  reportSection.setAttribute("class", "report");
+  main.appendChild(reportSection);
+
+  const h2 = document.createElement("h2");
+  h2.textContent = "Report: No Fish Selected!";
+  reportSection.appendChild(h2);
+
+  const hr = document.createElement("hr");
+  reportSection.appendChild(hr);
+
+  const p2 = document.createElement("p");
+  p2.textContent = "Do not forget to select 'Add To Fish Pool'";
+  reportSection.appendChild(p2);
 }

@@ -2,10 +2,48 @@ html {
   height: 100vh;
   width: 100vw;
   margin: 2rem;
-  font-family: "Open Sans", Roboto, Montserrat;
   background-color: black;
   color: #08867d;
   display: contents;
+  font-family: "Courgette", cursive;
+  font-family: "Philosopher", sans-serif;
+  font-family: "Vina Sans", cursive;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px rgb(55, 214, 192);
+  font-family: "Marker Felt", fantasy;
+  font-size: 120px;
+  margin-bottom: -12px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+header h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#pageInfo p {
+  margin-top: -10px;
+  font-size: 36;
+}
+#pageInfo {
+  margin: 69px;
+}
+
+p {
+  text-align: center;
+}
+
+p b {
+  font-size: 75px;
+  letter-spacing: 4px;
 }
 
 #Aquarium_Builder {
@@ -28,82 +66,12 @@ html {
   justify-content: space-between;
   width: 100%;
   height: auto;
-  border: 1px solid rgb(63, 146, 172);
+  border: 1px dotted rgb(5, 97, 80);
   margin-bottom: 20px;
   border-radius: 15px;
-}
-
-#middle {
-  display: flex;
-  justify-content: space-between;
-}
-
-#fishPool {
-  width: auto;
-  height: 50vh;
-  border: 1px solid rgb(63, 146, 172);
-  margin-bottom: 20px;
-  overflow: hidden;
-  /*background-color: black; */
-  border-radius: 15px;
-}
-
-#fishPool .content {
-  overflow: auto;
-  height: 100%;
-  display: flex;
-  gap: 4vmin;
-  left: 50%;
-  top: 50%;
-  position: -ms-page;
-}
-
-.content .image {
-  width: 100%;
-  height: 100%;
-
-  object-position: center;
-}
-
-#compatibilityGuide {
-  width: 30%;
-  height: 50vh;
-  border: 1px solid rgb(63, 146, 172);
-  margin-bottom: 20px;
-  border-radius: 15px;
-}
-
-#footer {
-  width: 100%;
-  height: auto;
-  border: 1px solid rgb(63, 146, 172);
-  border-radius: 15px;
-  float: right;
-}
-.addedFish {
-  float: left;
-  padding: 8px;
-}
-
-h1 {
-  text-align: center;
-  color: white;
-  text-shadow: 4px 4px darkblue;
-  font-family: "Marker Felt", fantasy;
-  font-size: 64px;
-  margin-bottom: -12px;
-}
-
-h2 {
-  text-align: center;
-  /*word-spacing: 4px;
-  letter-spacing: 10px;*/
-  font-family: Comic Sans MS, Comic Sans, cursive;
-}
-
-header h2 {
-  text-align: center;
-  margin-top: 10px;
+  font-family: "Courgette", cursive;
+  font-family: "Philosopher", sans-serif;
+  font-family: "Vina Sans", cursive;
 }
 
 #header button.selected {
@@ -117,10 +85,12 @@ header h2 {
   border: white;
   color: white;
   /* Padding and margin */
-  padding: 2px;
-  margin: 4px;
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
   /* Text styling */
-
+  font-size: 15px;
   text-align: center;
   /* Hover effect */
   cursor: pointer;
@@ -128,12 +98,104 @@ header h2 {
 }
 
 #header button:hover {
-  background-color: grey;
+  background-color: rgb(109, 108, 108);
+}
+
+#middleAreaH {
+  flex: 0 0 90%;
+}
+
+#leftH,
+#rightH {
+  flex: 0 0 5%;
+  position: relative;
+}
+
+#bigButtonOnHeader1 {
+  /*border-radius: 8px;
+  margin: 9px 0px 0px 9px;*/
+  position: absolute;
+  top: 15;
+  left: 15;
+  border-radius: 15px;
+  padding: 1%;
+}
+#bigButtonOnHeader2 {
+  /*border-radius: 8px;*/
+  position: absolute;
+  top: 15;
+  right: 15;
+  border-radius: 15px;
+  padding: 1%;
+}
+
+#middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fishPool {
+  flex: 0 100% 70%;
+  width: auto;
+  height: 50vh;
+  border: 1px dotted rgb(5, 97, 80);
+  margin-bottom: 20px;
+  overflow: hidden;
+  /*background-color: black; */
+  border-radius: 15px;
+}
+
+#fishPool .content {
+  overflow: auto;
+  height: 100%;
+  display: flex;
+}
+
+.content .image {
+  width: 100%;
+  height: 100%;
+
+  object-position: center;
+}
+
+#compatibilityGuide {
+  flex: 0 0 25%;
+  width: 50%;
+  height: 50vh;
+  border: 1px dotted rgb(5, 97, 80);
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  border: 1px dotted rgb(5, 97, 80);
+  border-radius: 15px;
+  float: right;
+  position: relative;
+}
+.addedFish {
+  float: left;
+  padding: 8px;
+}
+#footer button:hover {
+  background-color: rgb(55, 214, 192);
+}
+#report-button {
+  position: absolute;
+  bottom: 15;
+  right: 15;
+
+  background-color: rgb(5, 97, 80);
+  padding: 1%;
+  border-radius: 15px;
 }
 
 .instructions {
   color: red;
   text-align: center;
+  font-size: 18px;
 }
 
 .fish-button {
@@ -149,5 +211,27 @@ header h2 {
 }
 
 hr {
-  width: 80%;
+  width: 90%;
+}
+
+.report {
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5%;
+}
+.report p {
+  font-size: larger;
+}
+#title {
+  font-size: 32;
+  font-family: "Vina Sans", cursive;
+}
+#Behavior,
+#ScientificName,
+#Length,
+#Water_Con {
+  font-size: 20px;
+  font-family: cursive, sans-serif;
 }

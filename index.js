@@ -10,11 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const resetButton = document.getElementById("bigButtonOnHeader1");
   resetButton.addEventListener("click", handlesClickForResetButton);
 
-  // const xbuttons = document.querySelectorAll("X");
-  // for (btn of xbuttons) {
-  //   btn.addEventListener("click", handleClickForXButtons);
-  // }
+  const generateReportButton = document.getElementById("report-button");
+  generateReportButton.addEventListener("click", handleClickForReportButton);
 });
+
+const costPassage =
+  "The cost of starting an aquarium can vary depending on the size and complexity of the setup. On average, a basic setup for a small aquarium can cost around $100-$200, including essentials such as a tank, filter, heater, and lighting. Additional costs may include gravel or substrate, decorations, water conditioner, and fish food. It's important to consider ongoing costs for regular maintenance, such as water testing kits, replacement filter media, and potential veterinary care for the fish. Researching specific requirements for the type of fish you plan to keep and consulting with experienced aquarists can help you determine the necessary supplies and costs for your aquarium setup.";
 
 function parseFishData(data) {
   for (const item of data) {
@@ -57,7 +58,6 @@ function handlesDoubleClickForFishButtons(e) {
   const btn = e.target;
 
   if (btn.classList.contains("selected")) {
-    console.log("should be removing");
     btn.classList.remove("selected");
   } else {
     btn.classList.add("selected");
@@ -72,14 +72,28 @@ function handlesClickForAddButton(e) {
     //console.log(target);
     buildAquarium(target.textContent);
   }
+  removeSelectedButtons();
+}
+function removeSelectedButtons() {
+  const selected_fish = document.querySelectorAll(".selected");
+
+  for (const target of selected_fish) {
+    target.classList.remove("selected");
+  }
 }
 
 function handlesClickForResetButton() {
-  //removes .selected class from all selected buttons
-  const targets = document.querySelectorAll(".selected");
+  //removes attributes from all selected buttons
+  removeSelectedButtons();
 
-  for (const target of targets) {
-    target.classList.remove("selected");
+  const fish_pool = document.querySelectorAll(".addedFish");
+  for (const target of fish_pool) {
+    target.remove();
+  }
+
+  const report = document.querySelector(".report");
+  if (report !== null) {
+    report.remove();
   }
 }
 
@@ -89,6 +103,19 @@ function handleClickForXButtons(e) {
   const p = target.parentNode;
   p.remove();
 }
+
+function handleClickForReportButton(e) {
+  //produces report on page
+  const addedFish = document.getElementsByClassName("addedFish");
+  const fishNames = Array.from(addedFish).map((p) => {
+    return p.textContent.split("   ")[0];
+  });
+
+  if (document.querySelector(".report") === null) {
+    generateReport(fishNames);
+  }
+}
+
 //fetches object with matching common_name
 function fetchFish(name) {
   return fetch("http://localhost:3000/fish")
@@ -130,6 +157,7 @@ function selectImage(fishName) {
   });
 }
 
+//creates p and button for selected fishes
 function buildAquarium(fishName) {
   const footer = document.getElementById("footer");
 
@@ -147,6 +175,35 @@ function buildAquarium(fishName) {
   footer.appendChild(p);
 }
 
+//accepts a list and an writes html section for report
 function generateReport(fishes) {
-  //;
+  const main = document.querySelector("main");
+  const reportSection = document.createElement("section");
+  reportSection.setAttribute("class", "report");
+
+  main.appendChild(reportSection);
+
+  const h2 = document.createElement("h2");
+  h2.textContent = "Report: Tips for Your Aquarium!";
+  reportSection.appendChild(h2);
+
+  const hr = document.createElement("hr");
+  reportSection.appendChild(hr);
+
+  const p2 = document.createElement("p");
+  p2.textContent = `Adding ${fishes.length} fishes to your Aquarium Project is a big start! Treat them all responsibly!`;
+  reportSection.appendChild(p2);
+
+  const hr2 = document.createElement("hr");
+  reportSection.appendChild(hr2);
+
+  const p = document.createElement("p");
+  p.textContent =
+    "The cost of starting an aquarium can vary depending on the size and complexity of the setup. On average, a basic setup for a decent aquarium can cost around $300-$500, including essentials such as a tank, filter, heater, and lighting. Additional costs may include gravel or substrate, decorations, water conditioner, and fish food.";
+  reportSection.appendChild(p);
+
+  const p1 = document.createElement("p");
+  p1.textContent =
+    "It's important to consider ongoing costs for regular maintenance, such as water testing kits, replacement filter media, and potential veterinary care for the fish. Researching specific requirements for the type of fish you plan to keep and consulting with experienced aquarists can help you determine the necessary supplies and costs for your aquarium setup.";
+  reportSection.appendChild(p1);
 }

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //API Endpoint to
+  //API Endpoint to fetch fishes
   const fetchFishes = fetch("http://localhost:3000/fish")
     .then((res) => res.json())
     .then((data) => parseFishData(data));
@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   generateReportButton.addEventListener("click", handleClickForReportButton);
 });
 
+//invokes rendering from the API for initially loaded page
 function parseFishData(data) {
   for (const item of data) {
     renderFishButtons(item);
@@ -21,7 +22,7 @@ function parseFishData(data) {
   }
 }
 
-//creates button with an event listener for each fish
+//creates button element and attaches event listener for each fish
 function renderFishButtons(fish) {
   const header = document.getElementById("middleAreaH");
 
@@ -50,14 +51,14 @@ function handlesClickForFishButtons(e) {
   selectImage(name);
 }
 
+//handles double-click event for fish buttons
 function handlesDoubleClickForFishButtons(e) {
-  // adds .selected class
   const btn = e.target;
   btn.classList.toggle("selected");
 }
 
+//Handles the click event for the "Add to My Aquarium" button and adds selected fish to the aquarium
 function handlesClickForAddButton(e) {
-  //sends list of selected elements to footer
   const targets = document.querySelectorAll(".selected");
 
   for (const target of targets) {
@@ -74,8 +75,10 @@ function removeSelectedButtons() {
   }
 }
 
+//Removes the "selected" class from all fish buttons
+//clears the Fish Pool in the footerDiv
+//removes any reports
 function handlesClickForResetButton() {
-  //removes attributes from all selected buttons
   removeSelectedButtons();
 
   const fish_pool = document.querySelectorAll(".addedFish");
@@ -89,15 +92,15 @@ function handlesClickForResetButton() {
   }
 }
 
+//removes corresponding fish from fish pool
 function handleClickForXButtons(e) {
-  //deletes p element // parent node
   const target = e.target;
   const p = target.parentNode;
   p.remove();
 }
 
+//triggers generateReport
 function handleClickForReportButton(e) {
-  //produces report on page
   const addedFish = document.getElementsByClassName("addedFish");
   const fishNames = Array.from(addedFish).map((p) => {
     return p.textContent.split("   ")[0];
@@ -119,7 +122,7 @@ function fetchFish(name) {
     .then((data) => data.find((elem) => elem.common_name === name));
 }
 
-//populates the compatibility guide with relative info from DB
+//populates the compatibility guide with relevant for fish
 function buildGuide(fishName) {
   fetchFish(fishName).then((fish) => {
     const h2 = document.getElementById("title");
@@ -139,7 +142,7 @@ function buildGuide(fishName) {
   });
 }
 
-// Removes the initialized scroller and fixes to image of fish
+// Updates the fish image displayed in the image scroller based on the selected fish
 function selectImage(fishName) {
   fetchFish(fishName).then((fish) => {
     const scroller = document.getElementById("scroller");
@@ -153,7 +156,7 @@ function selectImage(fishName) {
   });
 }
 
-//creates p and button for selected fishes
+//Builds a paragraph element with a fish name and delete button, and adds it to the aquarium
 function buildAquarium(fishName) {
   const footer = document.getElementById("footer");
 
@@ -171,7 +174,7 @@ function buildAquarium(fishName) {
   footer.appendChild(p);
 }
 
-//accepts a list and an writes html section for report
+//Generates an HTML section with a report containing tips
 function generateReport(fishes) {
   const main = document.querySelector("main");
   const reportSection = document.createElement("section");
@@ -204,7 +207,7 @@ function generateReport(fishes) {
   reportSection.appendChild(p1);
 }
 
-//writes to screen when a user selects Generate Report without selecting any fish
+//Generates an HTML section indicating that no fish have been selected for the report.
 function noReport() {
   const main = document.querySelector("main");
   const reportSection = document.createElement("section");

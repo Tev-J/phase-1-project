@@ -14,9 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
   generateReportButton.addEventListener("click", handleClickForReportButton);
 });
 
-const costPassage =
-  "The cost of starting an aquarium can vary depending on the size and complexity of the setup. On average, a basic setup for a small aquarium can cost around $100-$200, including essentials such as a tank, filter, heater, and lighting. Additional costs may include gravel or substrate, decorations, water conditioner, and fish food. It's important to consider ongoing costs for regular maintenance, such as water testing kits, replacement filter media, and potential veterinary care for the fish. Researching specific requirements for the type of fish you plan to keep and consulting with experienced aquarists can help you determine the necessary supplies and costs for your aquarium setup.";
-
 function parseFishData(data) {
   for (const item of data) {
     renderFishButtons(item);
@@ -56,12 +53,7 @@ function handlesClickForFishButtons(e) {
 function handlesDoubleClickForFishButtons(e) {
   // adds .selected class
   const btn = e.target;
-
-  if (btn.classList.contains("selected")) {
-    btn.classList.remove("selected");
-  } else {
-    btn.classList.add("selected");
-  }
+  btn.classList.toggle("selected");
 }
 
 function handlesClickForAddButton(e) {
@@ -69,7 +61,6 @@ function handlesClickForAddButton(e) {
   const targets = document.querySelectorAll(".selected");
 
   for (const target of targets) {
-    //console.log(target);
     buildAquarium(target.textContent);
   }
   removeSelectedButtons();
@@ -110,8 +101,6 @@ function handleClickForReportButton(e) {
   const fishNames = Array.from(addedFish).map((p) => {
     return p.textContent.split("   ")[0];
   });
-
-  //console.log(fishNames);
 
   if (document.querySelector(".report") === null) {
     if (fishNames.length === 0) {

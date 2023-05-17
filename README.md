@@ -17,6 +17,8 @@ MyAquarium is a static web page that allows users to create a virtual aquarium. 
 5. Click on the "Add To Fish Pool" button to add selected fish to the aquarium fish pool.
 6. Click on the "Generate Report" button to generate a report based on your fish selections.
 
+![media]
+
 ## Contributing
 
 Contributions to MyAquarium are 101% welcome. If you find any issues or have suggestions for improvements, please submit a pull request or open an issue in the repository.

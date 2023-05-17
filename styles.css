@@ -172,23 +172,20 @@ p b {
   height: auto;
   border: 1px dotted rgb(5, 97, 80);
   border-radius: 15px;
-  float: right;
-  position: relative;
 }
 .addedFish {
   float: left;
   padding: 8px;
+  margin: 10px;
 }
 #footer button:hover {
   background-color: rgb(55, 214, 192);
 }
 #report-button {
-  position: absolute;
-  bottom: 15;
-  right: 15;
-
+  float: right;
   background-color: rgb(5, 97, 80);
-  padding: 1%;
+  padding: 0.5%;
+  margin: 10px;
   border-radius: 15px;
 }
 

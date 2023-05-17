@@ -65,6 +65,7 @@ function handlesClickForAddButton(e) {
   }
   removeSelectedButtons();
 }
+
 function removeSelectedButtons() {
   const selected_fish = document.querySelectorAll(".selected");
 

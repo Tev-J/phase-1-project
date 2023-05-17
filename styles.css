@@ -165,6 +165,7 @@ p b {
   border: 1px dotted rgb(5, 97, 80);
   margin-bottom: 20px;
   border-radius: 15px;
+  overflow: auto;
 }
 
 #footer {
